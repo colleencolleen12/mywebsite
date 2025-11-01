@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="stylesheet2.css">
 </head>
 <body>
+<div id="intro">
+  <h1>Welcome to My Calculator</h1>
+  <p>Loading...</p>
+</div>
+
+<div id="main" style="display:none;">
+  <h1>Calculator Page</h1>
+  <p>Can solve simple questions</p>
+
   <div class="calculator">
     <input type="text" id="result" disabled />
     <div class="buttons">
@@ -32,9 +41,12 @@
 
       <button>0</button>
       <button>.</button>
-      <button class="operator">Exit</button>
-    </div>
-  
+	  <button class="operator"
+	 onclick="exitPage()">Exit</button>
+	 </div>
+	 
+	 
+	
   <script src="c2.js"></script>
 </body>
 </html>
